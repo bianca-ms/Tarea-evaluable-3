@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Productos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animate.css/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.7/sweetalert2.min.css"
+      integrity="sha512-+EWd6xfvXxcB5OjNf7WAvHRcKLCIG4ScYzBy/IXMCfNWxEv1gMxK91TRz1IEl11g+yNY3L5T9lRzFRTpBfnKfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="animate__animated animate__bounce">Página principal</h1>
+      <div id="filters">
+        <input type="number" id="minPrice" placeholder="Precio mínimo" />
+        <input type="text" id="category" placeholder="Categoría" />
+        <input type="text" id="brand" placeholder="Marca" />
+        <button onclick="applyFilters()">Aplicar filtro</button>
+      </div>
+
+      <div id="results"></div>
+
+      <aside id="cart"></aside>
+    </header>
+
+    <main>
+      <div id="filters"></div>
+      <div id="results" class="product-container"></div>
+
+      <aside id="cart">
+        <h2>Carrito</h2>
+        <ul id="cartList"></ul>
+      </aside>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
